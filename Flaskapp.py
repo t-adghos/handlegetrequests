@@ -6,7 +6,7 @@ from flask import make_response
 app = Flask(__name__)
 
 
-@app.route('<string:task_id>', methods=['GET'])
+@app.route('/<string:task_id>', methods=['GET'])
 def get_task(task_id):
     print task_id
 
